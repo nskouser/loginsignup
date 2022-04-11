@@ -13,9 +13,11 @@ class PasswordRestMsg extends StatelessWidget {
         children: [
           SizedBox(height: 70,),
           Column(
-            children: [Image.asset("assets/images/8.png",
+            children: [
+              Image.asset("assets/images/8.png",
             height: 200,
-            width: 200,)],
+            width: 200,
+              )],
           ),
           SizedBox(height: 50,),
           Column(mainAxisAlignment: MainAxisAlignment.center,

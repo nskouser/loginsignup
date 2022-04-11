@@ -1,96 +1,68 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:loginsignup/extra.dart';
-import 'package:loginsignup/screens/homePages/vault%20-%20with%20statsPage_2.dart';
+import 'package:loginsignup/screens/Rental_history%20for_USD%20-%2015/frame942Page_4.dart';
+import 'package:loginsignup/screens/messages/messing_USD_16.dart';
 
-class HomePage_1 extends StatelessWidget {
+class SearchForLiving_3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
       backgroundColor: Colors.blue.withOpacity(0.1),
       appBar: AppBar(
+        // toolbarHeight: 120,
         backgroundColor: Colors.blue.withOpacity(0.1),
-        leading: Icon(
-          Icons.menu,
-          color: Colors.blue,
-        ),
+leading: Icon(Icons.menu,color: Colors.blue,),
         actions: [
-          Icon(
-            Icons.home,
-            color: Colors.indigoAccent,
+          Padding(
+            padding: const EdgeInsets.fromLTRB(0,20,30,0),
+            child: Icon(
+              Icons.home,
+              color: Colors.indigoAccent,
+            ),
           )
         ],
-      ),
-      body: ListView(
-        children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+        bottom: PreferredSize(
+          preferredSize: Size.fromHeight(30),
+          child: Column(
             children: [
-              Container(
-                height: 20,
-                width: 60,
-                child: Center(
-                  child: Text(
-                    "hide",
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  SizedBox(
+                    width: 15,
+                  ),
+                  Icon(
+                    Icons.arrow_back_ios,
+                    color: Colors.blue,
+                  ),
+                  Text(
+                    "Back",
                     style: TextStyle(
-                      fontSize: 6.95,
-                    ),
+                        fontSize: 17,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.blue),
                   ),
-                ),
-                decoration: BoxDecoration(
-                    color: Colors.blue.withOpacity(0.2),
-                    borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(20),
-                      bottomLeft: Radius.circular(20),
-                    )),
+                ],
               ),
-              Container(
+              SizedBox(
                 height: 20,
-                width: 60,
-                child: Center(
-                  child: Text(
-                    "Show",
-                    style: TextStyle(
-                      fontSize: 6.95,
-                    ),
-                  ),
-                ),
-                decoration: BoxDecoration(
-                  color: Colors.blue.withOpacity(0.2),
-                  borderRadius: BorderRadius.only(
-                    topRight: Radius.circular(20),
-                    bottomRight: Radius.circular(20),
-                  ),
-                ),
               ),
+
             ],
           ),
-          SizedBox(
-            height: 50,
-          ),
-          Column(
-            children: [
-              GestureDetector(
-                onTap: () {
-                  navigateTo(context, VaultPage_2());
-                },
-                child: Image.asset(
-                  "assets/images/11.png",
-                  width: 300,
-                  height: 300,
-                ),
-              )
-            ],
-          ),
-        ],
+        ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
-        child: Center(child: Icon(Icons.add)),
+        child: Center(child: GestureDetector(onTap: (){navigateTo(context, Frame942Page_4());},
+            child: Icon(Icons.add))),
         backgroundColor: Colors.black,
       ),
+
       bottomSheet: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -138,7 +110,7 @@ class HomePage_1 extends StatelessWidget {
                         decoration: BoxDecoration(
                             color: Colors.indigoAccent.withOpacity(0.1),
                             borderRadius:
-                                BorderRadius.all(Radius.circular(20))),
+                            BorderRadius.all(Radius.circular(20))),
                       ),
                     ),
                     Center(
@@ -152,6 +124,40 @@ class HomePage_1 extends StatelessWidget {
               ],
             ),
           ),
+        ],
+      ),
+
+
+
+      body: ListView(
+        children: [
+          SizedBox(height: 40,),
+
+ListTile(
+  leading: Text("search",
+  style: TextStyle(
+    fontSize: 14,
+    color: Colors.blueGrey,
+  ),),
+  trailing: Container(
+    height: 30,
+    width: 30,
+    child: Icon(Icons.search,color: Colors.blue,),
+    decoration: BoxDecoration(color: Colors.white.withOpacity(0.4),
+      borderRadius: BorderRadius.all(Radius.circular(30))
+    ),
+  ),
+)
+
+
+
+
+
+
+
+
+
+
         ],
       ),
     );

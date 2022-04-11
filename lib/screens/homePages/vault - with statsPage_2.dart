@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:loginsignup/extra.dart';
-import 'package:loginsignup/screens/homePages/vault%20-%20with%20statsPage_2.dart';
+import 'package:loginsignup/screens/homePages/connectionPage_3.dart';
 
-class HomePage_1 extends StatelessWidget {
+class VaultPage_2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -66,20 +66,18 @@ class HomePage_1 extends StatelessWidget {
               ),
             ],
           ),
+          Column(
+            children: [Text("Graph")],
+          ),
           SizedBox(
-            height: 50,
+            height: 150,
           ),
           Column(
             children: [
-              GestureDetector(
-                onTap: () {
-                  navigateTo(context, VaultPage_2());
-                },
-                child: Image.asset(
-                  "assets/images/11.png",
-                  width: 300,
-                  height: 300,
-                ),
+              Image.asset(
+                "assets/images/12.png",
+                width: 120,
+                height: 120,
               )
             ],
           ),
@@ -88,7 +86,12 @@ class HomePage_1 extends StatelessWidget {
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
-        child: Center(child: Icon(Icons.add)),
+        child: GestureDetector(
+            onTap: () {
+              navigateTo(context, ConnectionPage_3());
+            },
+            child: Center(child: GestureDetector(onTap: (){navigateTo(context, ConnectionPage_3());},
+                child: Icon(Icons.add)))),
         backgroundColor: Colors.black,
       ),
       bottomSheet: Row(
