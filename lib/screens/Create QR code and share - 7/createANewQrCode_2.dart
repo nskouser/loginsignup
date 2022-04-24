@@ -130,52 +130,57 @@ class CreateNewQrCode_2 extends StatelessWidget {
 
       body: ListView(
         children: [
-          Padding(
-            padding: const EdgeInsets.all(20.0),
-            child: Container(
-              height: 500,
-              child: Column(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(30, 20, 30, 0),
-                    child: Container(
-                      height: 300,
-                      child: Column(
-                        children: [
-                          Container(
-                            height: 300,
-                            child: Container(
-                              decoration: BoxDecoration(
-                                //  color: Colors.white,
 
-                                  image: DecorationImage(
-                                    image: AssetImage(
-                                      "assets/images/68.png",
-                                    ),
-                                      fit: BoxFit.cover
-                                  ),
-                                  borderRadius:
-                                  BorderRadius.all(Radius.circular(50))),
-                            ),
-                          ),
-                        ],
+          Container(
+            color: Colors.blueGrey.withOpacity(0.1),
+            child: Column(
+              children: [
+                Stack(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(30.0),
+                      child: Image.asset("assets/images/68.png",
                       ),
-                      decoration: BoxDecoration(
-                        // color: Colors.white.withOpacity(0.3),
-                          borderRadius: BorderRadius.all(Radius.circular(30))),
                     ),
-                  ),
-                  Text(
-                    "Scan to establish a connection",
-                    style: TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.blue),
-                  ),
-                  SizedBox(height: 40,),
-                  Row(
-                    children: [
-                      Expanded(flex:1,
+                    Row(
+                      children: [
+                        SizedBox(
+                          height: 50,
+                        ),
+
+                      ],
+                    ),
+                    Positioned(left: 1,
+                        right: 1,
+                        top: 1,
+                        bottom: 0,
+                        child: Row(mainAxisAlignment: MainAxisAlignment.center,
+                          children: [Image.asset("assets/images/69.png",height: 300,width: 300,)
+
+
+                          ],
+                        ))
+                  ],
+                ),
+
+                Row(mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+
+                    Text(
+                      "Scan to establish a connection",
+                      style: TextStyle(
+                          fontSize: 15,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.blue),
+                    ),
+                  ],),
+                SizedBox(height: 30,),
+
+                Row(
+                  children: [
+                    Expanded(flex:1,
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
                           child: Container(
                             height: 30,
                             child: Center(
@@ -191,25 +196,28 @@ class CreateNewQrCode_2 extends StatelessWidget {
                                 borderRadius: BorderRadius.all(Radius.circular(20))
                             ),
 
-                          )),
-                      Expanded(flex:1,
-                          child: Container(
-                            height: 30,
-                            child: Center(
-                              child: Text("Share with \n"
-                                  "externally",
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 9.63,
-                                    color: Colors.blue
-                                ),),
-                            ),
-                            decoration: BoxDecoration(color: Colors.white.withOpacity(0.3),
-                                borderRadius: BorderRadius.all(Radius.circular(20))
-                            ),
+                          ),
+                        )),
+                    Expanded(flex:1,
+                        child: Container(
+                          height: 30,
+                          child: Center(
+                            child: Text("Share with \n"
+                                "externally",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 9.63,
+                                  color: Colors.blue
+                              ),),
+                          ),
+                          decoration: BoxDecoration(color: Colors.white.withOpacity(0.3),
+                              borderRadius: BorderRadius.all(Radius.circular(20))
+                          ),
 
-                          )),
-                      Expanded(flex:1,
+                        )),
+                    Expanded(flex:1,
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
                           child: Container(
                             height: 30,
                             child: Center(
@@ -225,18 +233,18 @@ class CreateNewQrCode_2 extends StatelessWidget {
                                 borderRadius: BorderRadius.all(Radius.circular(20))
                             ),
 
-                          )),
+                          ),
+                        )),
 
-                    ],
-                  ),
+                  ],
+                ),
 
-                ],
-              ),
-              decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.3),
-                  borderRadius: BorderRadius.all(Radius.circular(0))),
+
+                SizedBox(height: 200,)
+              ],
             ),
-          )
+          ),
+
         ],
       ),
     );

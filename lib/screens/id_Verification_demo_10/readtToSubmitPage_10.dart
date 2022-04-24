@@ -198,7 +198,7 @@ class ReadyToSubmitPage_10 extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: 50,
+            height: 150,
           )
         ],
       ),

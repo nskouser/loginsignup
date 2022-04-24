@@ -64,8 +64,8 @@ class SharingPage_3 extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.fromLTRB(20, 0, 0, 0),
             child: Container(
-              width: 400,
-              height: 600,
+             // width: 400,
+             // height: 600,
               decoration: BoxDecoration(
                   color: Colors.transparent,
                   borderRadius: BorderRadius.all(Radius.circular(10))),
@@ -220,9 +220,7 @@ class SharingPage_3 extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(
-                    height: 20,
-                  ),
+                  SizedBox(height: 20,),
                   Row(
                     children: [
                       Expanded(

@@ -216,534 +216,319 @@ class _CardPage_6State extends State<CardPage_6> {
                     )
                   ],
                 ),
+
+
+
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                 // mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    Expanded(
-                        flex: 1,
-                        child: Container(
-                          height: 200,
-                          child: Column(
-                            children: [
-                              SizedBox(
-                                height: 30,
-                              ),
-                              Row(
-                                children: [
-                                  Padding(
-                                    padding:
-                                        const EdgeInsets.fromLTRB(20, 20, 0, 0),
-                                    child: Container(
-                                      height: 30,
-                                      width: 30,
-                                      decoration: BoxDecoration(
-                                          color: Colors.blue,
-                                          borderRadius: BorderRadius.all(
-                                              Radius.circular(20))),
-                                    ),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(30,20,10,20),
+                      child:
+                      Container(
+                        height: 150,
+                        width: 200,
+
+                        child: Column(
+                          children: [
+                            SizedBox(
+                              height: 30,
+                            ),
+                            Row(
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Container(
+                                    height: 20,
+                                    width: 20,
+                                    decoration: BoxDecoration(
+                                        color: Colors.blue,
+                                        borderRadius: BorderRadius.all(
+                                            Radius.circular(20))),
                                   ),
-                                  Padding(
-                                    padding: const EdgeInsets.fromLTRB(
-                                        0, 20, 300, 0),
-                                    child: Container(
-                                      height: 30,
-                                      width: 30,
-                                      decoration: BoxDecoration(
-                                          color: Colors.blue,
-                                          borderRadius: BorderRadius.all(
-                                              Radius.circular(20))),
-                                    ),
+                                ),
+                                Container(
+                                  height: 20,
+                                  width: 20,
+                                  decoration: BoxDecoration(
+                                      color: Colors.blue,
+                                      borderRadius: BorderRadius.all(
+                                          Radius.circular(20))),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Text(
+                                    "MI School",
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 14,
+                                        color: Colors.blue),
                                   ),
-                                  Container(
-                                    child: Padding(
-                                      padding: const EdgeInsets.fromLTRB(
-                                          0, 20, 20, 0),
-                                      child: Text(
-                                        "MI School",
-                                        style: TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 14,
-                                            color: Colors.blue),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Padding(
-                                    padding:
-                                        const EdgeInsets.fromLTRB(20, 10, 0, 0),
-                                    child: Text(
-                                      "Requested on",
+                                ),
+                              ],
+                            ),
+
+                            Row(
+                              //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                Row(
+                                  mainAxisAlignment:
+                                  MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text(
+                                      "Requested on\nShared on\nTime\n",
                                       style: TextStyle(
                                           fontSize: 10,
                                           fontWeight: FontWeight.bold,
                                           color: Colors.blueGrey),
                                     ),
-                                  ),
-                                  Container(
-                                    child: Padding(
-                                      padding: const EdgeInsets.fromLTRB(
-                                          0, 10, 40, 10),
-                                      child: Text(
-                                        "12/12/2020",
-                                        style: TextStyle(
-                                          fontSize: 10,
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.blueGrey,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Padding(
-                                    padding:
-                                        const EdgeInsets.fromLTRB(20, 10, 0, 0),
-                                    child: Text(
-                                      "Shared on",
+                                    Text(
+                                      "12/12/2020\n12/12/2020\n1:30 PM ",
                                       style: TextStyle(
                                           fontSize: 10,
                                           fontWeight: FontWeight.bold,
                                           color: Colors.blueGrey),
                                     ),
-                                  ),
-                                  Container(
-                                    child: Padding(
-                                      padding: const EdgeInsets.fromLTRB(
-                                          0, 10, 40, 10),
-                                      child: Text(
-                                        "12/12/2020",
-                                        style: TextStyle(
-                                          fontSize: 10,
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.blueGrey,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Padding(
-                                    padding:
-                                        const EdgeInsets.fromLTRB(20, 10, 0, 0),
-                                    child: Text(
-                                      "Time:",
-                                      style: TextStyle(
-                                          fontSize: 10,
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.blueGrey),
-                                    ),
-                                  ),
-                                  Container(
-                                    child: Padding(
-                                      padding: const EdgeInsets.fromLTRB(
-                                          0, 10, 40, 10),
-                                      child: Text(
-                                        "1:30PM",
-                                        style: TextStyle(
-                                          fontSize: 10,
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.blueGrey,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ],
-                          ),
-                          decoration: BoxDecoration(
-                              color: Colors.white10.withOpacity(0.3),
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(10))),
-                        )),
-                    Expanded(
-                        flex: 1,
-                        child: Container(
-                          height: 130,
-                          child: Column(
-                            children: [
-                              SizedBox(
-                                height: 10,
-                              ),
-                              Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Text(
+
+                                  ],
+                                ),
+
+
+                              ],
+                            ),
+
+
+
+                          ],
+                        ),
+                        decoration: BoxDecoration(
+                            color: Colors.white10.withOpacity(0.3),
+                            borderRadius:
+                                BorderRadius.all(Radius.circular(10))),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(0,30,20,10),
+                      child: Container(
+                        height: 130,
+                        width: 200,
+
+                        child: Column(
+                          children: [
+                            //SizedBox(height: 30,),
+                            Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.all(10.0),
+                                  child: Text(
                                     "Rental",
                                     style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 24,
-                                      color: Colors.blue,
-                                    ),
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 14,
+                                        color: Colors.blue),
                                   ),
-                                  Container(
-                                    child: Image.asset("assets/images/14.png"),
-                                  ),
-                                ],
-                              ),
-                              Row(
-                                //mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Container(
-                                    child: Padding(
-                                      padding: const EdgeInsets.fromLTRB(
-                                          0, 0, 40, 0),
-                                      child: Text(
-                                        "12/12/2020",
-                                        style: TextStyle(
-                                          fontSize: 10,
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.blueGrey,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Padding(
-                                    padding:
-                                        const EdgeInsets.fromLTRB(20, 0, 0, 0),
-                                    child: Text(
-                                      "Shared on",
-                                      style: TextStyle(
-                                          fontSize: 10,
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.blueGrey),
-                                    ),
-                                  ),
-                                  Container(
-                                    child: Padding(
-                                      padding: const EdgeInsets.fromLTRB(
-                                          120, 0, 0, 0),
-                                      child: Text(
-                                        "12/12/2020",
-                                        style: TextStyle(
-                                          fontSize: 10,
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.blueGrey,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Padding(
-                                    padding:
-                                        const EdgeInsets.fromLTRB(20, 10, 0, 0),
-                                    child: Text(
-                                      "Time:",
-                                      style: TextStyle(
-                                          fontSize: 10,
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.blueGrey),
-                                    ),
-                                  ),
-                                  Container(
-                                    child: Padding(
-                                      padding: const EdgeInsets.fromLTRB(
-                                          0, 0, 40, 0),
-                                      child: Text(
-                                        "3:05PM",
-                                        style: TextStyle(
-                                          fontSize: 10,
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.blueGrey,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ],
-                          ),
-                          decoration: BoxDecoration(
-                              color: Colors.white10.withOpacity(0.3),
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(10))),
-                        )),
-                  ],
-                ),
-                SizedBox(
-                  height: 20,
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Expanded(
-                        flex: 1,
-                        child: Container(
-                          height: 130,
-                          child: Column(
-                            children: [
-                              SizedBox(
-                                height: 30,
-                              ),
-                              Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Padding(
-                                    padding:
-                                        const EdgeInsets.fromLTRB(20, 0, 0, 0),
-                                    child: Image.asset("assets/images/35.png"),
-                                  ),
-                                  Container(
-                                    child: Padding(
-                                      padding: const EdgeInsets.fromLTRB(
-                                          0, 0, 20, 0),
-                                      child: Text(
-                                        "Clinic",
-                                        style: TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 14,
-                                            color: Colors.blue),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Padding(
-                                    padding:
-                                        const EdgeInsets.fromLTRB(20, 0, 0, 0),
-                                    child: Text(
-                                      "Requested on",
-                                      style: TextStyle(
-                                          fontSize: 10,
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.blueGrey),
-                                    ),
-                                  ),
-                                  Container(
-                                    child: Padding(
-                                      padding: const EdgeInsets.fromLTRB(
-                                          0, 0, 40, 10),
-                                      child: Text(
-                                        "12/12/2020",
-                                        style: TextStyle(
-                                          fontSize: 10,
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.blueGrey,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Padding(
-                                    padding:
-                                        const EdgeInsets.fromLTRB(20, 10, 0, 0),
-                                    child: Text(
-                                      "Shared on",
-                                      style: TextStyle(
-                                          fontSize: 10,
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.blueGrey),
-                                    ),
-                                  ),
-                                  Container(
-                                    child: Padding(
-                                      padding: const EdgeInsets.fromLTRB(
-                                          0, 0, 40, 0),
-                                      child: Text(
-                                        "12/12/2020",
-                                        style: TextStyle(
-                                          fontSize: 10,
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.blueGrey,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Padding(
-                                    padding:
-                                        const EdgeInsets.fromLTRB(20, 0, 0, 0),
-                                    child: Text(
-                                      "Time:",
-                                      style: TextStyle(
-                                          fontSize: 10,
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.blueGrey),
-                                    ),
-                                  ),
-                                  Container(
-                                    child: Padding(
-                                      padding: const EdgeInsets.fromLTRB(
-                                          0, 0, 40, 10),
-                                      child: Text(
-                                        "1:30PM",
-                                        style: TextStyle(
-                                          fontSize: 10,
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.blueGrey,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ],
-                          ),
-                          decoration: BoxDecoration(
-                              color: Colors.white10.withOpacity(0.3),
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(10))),
-                        )),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Expanded(
-                        flex: 1,
-                        child: Container(
-                          height: 200,
-                          width: 150,
-                          child: Column(
-                            children: [
-                              SizedBox(
-                                height: 10,
-                              ),
-                              Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Text(
-                                    "GE Co",
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 24,
-                                      color: Colors.blue,
-                                    ),
-                                  ),
-                                  Container(
-                                    child: Image.asset("assets/images/15.png"),
-                                  ),
-                                ],
-                              ),
-                              Row(
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.all(20.0),
+                                  child: Image.asset("assets/images/14.png"),
+                                )
+                              ],
+                            ),
 
-                                children: [
-                                  Container(
-                                    child: Padding(
-                                      padding: const EdgeInsets.fromLTRB(
-                                          0, 10, 40, 10),
-                                      child: Text(
-                                        "12/12/2020",
-                                        style: TextStyle(
-                                          fontSize: 10,
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.blueGrey,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Padding(
-                                    padding:
-                                        const EdgeInsets.fromLTRB(20, 10, 0, 0),
-                                    child: Text(
-                                      "Shared on",
+                            Row(
+                              //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                Row(
+mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text(
+                                      "\nShared on\nTime\n",
                                       style: TextStyle(
                                           fontSize: 10,
                                           fontWeight: FontWeight.bold,
                                           color: Colors.blueGrey),
                                     ),
-                                  ),
-                                  Container(
-                                    child: Padding(
-                                      padding: const EdgeInsets.fromLTRB(
-                                          120, 10, 0, 10),
-                                      child: Text(
-                                        "12/12/2020",
-                                        style: TextStyle(
-                                          fontSize: 10,
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.blueGrey,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Padding(
-                                    padding:
-                                        const EdgeInsets.fromLTRB(20, 10, 0, 0),
-                                    child: Text(
-                                      "Time:",
+                                    Text(
+                                      "12/12/2020\n12/12/2020\n1:30 PM ",
                                       style: TextStyle(
                                           fontSize: 10,
                                           fontWeight: FontWeight.bold,
                                           color: Colors.blueGrey),
                                     ),
-                                  ),
-                                  Container(
-                                    child: Padding(
-                                      padding: const EdgeInsets.fromLTRB(
-                                          0, 10, 40, 10),
-                                      child: Text(
-                                        "3:05PM",
-                                        style: TextStyle(
-                                          fontSize: 10,
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.blueGrey,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ],
-                          ),
-                          decoration: BoxDecoration(
-                              color: Colors.white10.withOpacity(0.3),
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(10))),
-                        )),
+
+                                  ],
+                                ),
+
+
+                              ],
+                            ),
+
+
+
+                          ],
+                        ),
+                        decoration: BoxDecoration(
+                            color: Colors.white10.withOpacity(0.3),
+                            borderRadius:
+                            BorderRadius.all(Radius.circular(10))),
+                      ),
+                    ),
                   ],
                 ),
+
+                Row(
+                  // mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(30,0,10,20),
+                      child:
+                      Container(
+                        height: 130,
+                        width: 200,
+
+                        child: Column(
+                          children: [
+                            SizedBox(
+                              height: 30,
+                            ),
+                            Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.all(10.0),
+                                  child: Container(
+                                    child: Image.asset("assets/images/35.png"),
+
+
+                                    decoration: BoxDecoration(
+
+                                        borderRadius: BorderRadius.all(
+                                            Radius.circular(0))),
+                                  ),
+                                ),
+
+                                Padding(
+                                  padding: const EdgeInsets.all(10.0),
+                                  child: Text(
+                                    "Clinic",
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 14,
+                                        color: Colors.blue),
+                                  ),
+                                ),
+                              ],
+                            ),
+
+                            Row(
+                              //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                Row(
+                                  mainAxisAlignment:
+                                  MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text(
+                                      "Requested on\nShared on\nTime\n",
+                                      style: TextStyle(
+                                          fontSize: 10,
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.blueGrey),
+                                    ),
+                                    Text(
+                                      "12/12/2020\n12/13/2020\n9:01 AM ",
+                                      style: TextStyle(
+                                          fontSize: 10,
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.blueGrey),
+                                    ),
+
+                                  ],
+                                ),
+
+
+                              ],
+                            ),
+
+
+
+                          ],
+                        ),
+                        decoration: BoxDecoration(
+                            color: Colors.white10.withOpacity(0.3),
+                            borderRadius:
+                            BorderRadius.all(Radius.circular(10))),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(0,0,30,10),
+                      child: Container(
+                        height: 150,
+                        width: 200,
+
+                        child: Column(
+                          children: [
+                            //SizedBox(height: 30,),
+                            Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Text(
+                                    "GE Co.",
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 14,
+                                        color: Colors.blue),
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.all(20.0),
+                                  child: Image.asset("assets/images/15.png"),
+                                )
+                              ],
+                            ),
+
+                            Row(
+                              //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: [
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text(
+                                      "Requested on\nShared on\nTime\n",
+                                      style: TextStyle(
+                                          fontSize: 10,
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.blueGrey),
+                                    ),
+                                    Text(
+                                      "12/12/2020\n12/12/2020\n9:00 AM ",
+                                      style: TextStyle(
+                                          fontSize: 10,
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.blueGrey),
+                                    ),
+
+                                  ],
+                                ),
+
+
+                              ],
+                            ),
+
+
+
+                          ],
+                        ),
+                        decoration: BoxDecoration(
+                            color: Colors.white10.withOpacity(0.3),
+                            borderRadius:
+                            BorderRadius.all(Radius.circular(10))),
+                      ),
+                    ),
+                  ],
+                ),
+
+
+
               ],
             ),
             decoration: BoxDecoration(

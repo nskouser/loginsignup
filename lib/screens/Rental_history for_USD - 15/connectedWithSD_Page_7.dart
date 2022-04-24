@@ -136,16 +136,65 @@ class ConnectedWithSdPage_7 extends StatelessWidget {
             height: 40,
           ),
           Container(
-            height: 350,
+           // height: 350,
             child: Column(
               children: [
                 SizedBox(
                   height: 30,
                 ),
+
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: [Image.asset("assets/images/25.png")],
+                  children: [
+                    Container(
+                      width: 60,
+                      height: 60,
+                      child: Container(
+                        //height: ,
+                        //width: 95,
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: AssetImage(
+                              "assets/images/62.png",
+                            ),
+                          ),
+                        ),
+                      ),
+                      decoration: BoxDecoration(
+                        color: Colors.indigoAccent.withOpacity(0.1),
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(60),
+                        ),
+                      ),
+                    ),
+                    Image.asset("assets/images/25.png"),
+                    Container(
+                      width: 60,
+                      height: 60,
+                      child: Container(
+                        //   height: 100,
+
+                        //  width: 100,
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: AssetImage(
+                              "assets/images/124.png",
+                            ),
+                          ),
+                        ),
+                      ),
+                      decoration: BoxDecoration(
+                        color: Colors.indigoAccent.withOpacity(0.1),
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(60),
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
+
+
+
                 SizedBox(
                   height: 40,
                 ),

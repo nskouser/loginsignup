@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:loginsignup/extra.dart';
+import 'package:loginsignup/screens/id_Verification_demo_10/readyToSubmitPage_9.dart';
 
 class ReadyToSubmitPage_8 extends StatelessWidget{
   @override
@@ -35,12 +37,14 @@ class ReadyToSubmitPage_8 extends StatelessWidget{
                 height: 30,
                 width: 100,
                 child: Center(
-                  child: Text("Submit",
-                      style: TextStyle(
-                        fontSize: 14,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white,
-                      )),
+                  child: GestureDetector(onTap: (){navigateTo(context, ReadyToSubmitPage_9());},
+                    child: Text("Submit",
+                        style: TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        )),
+                  ),
                 ),
                 decoration: BoxDecoration(
                     color: Colors.blue,

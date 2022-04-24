@@ -105,7 +105,7 @@ class RestoringYouWallet_9 extends StatelessWidget {
                                     decoration: BoxDecoration(
                                       color: Colors.blue,
                                       borderRadius:
-                                      BorderRadius.all(Radius.circular(3)),
+                                          BorderRadius.all(Radius.circular(3)),
                                     ),
                                   ),
                                 ],
@@ -127,7 +127,7 @@ class RestoringYouWallet_9 extends StatelessWidget {
                                     decoration: BoxDecoration(
                                       color: Colors.blue,
                                       borderRadius:
-                                      BorderRadius.all(Radius.circular(12)),
+                                          BorderRadius.all(Radius.circular(12)),
                                     ),
                                   ),
                                 ],
@@ -137,7 +137,7 @@ class RestoringYouWallet_9 extends StatelessWidget {
                           decoration: BoxDecoration(
                               color: Colors.white,
                               borderRadius:
-                              BorderRadius.all(Radius.circular(10))),
+                                  BorderRadius.all(Radius.circular(10))),
                         ),
                       ),
                     ],
@@ -180,12 +180,14 @@ class RestoringYouWallet_9 extends StatelessWidget {
                           padding: const EdgeInsets.fromLTRB(30, 0, 10, 0),
                           child: Container(
                             height: 60,
-                            child: Icon(Icons.circle,color: Colors.blue,),
-
+                            child: Icon(
+                              Icons.circle,
+                              color: Colors.blue,
+                            ),
                             decoration: BoxDecoration(
                                 color: Colors.white,
                                 borderRadius:
-                                BorderRadius.all(Radius.circular(10))),
+                                    BorderRadius.all(Radius.circular(10))),
                           ),
                         ),
                       ),
@@ -195,12 +197,14 @@ class RestoringYouWallet_9 extends StatelessWidget {
                           padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
                           child: Container(
                             height: 60,
-                            child: Icon(Icons.circle,color: Colors.blue,),
-
+                            child: Icon(
+                              Icons.circle,
+                              color: Colors.blue,
+                            ),
                             decoration: BoxDecoration(
                                 color: Colors.white,
                                 borderRadius:
-                                BorderRadius.all(Radius.circular(10))),
+                                    BorderRadius.all(Radius.circular(10))),
                           ),
                         ),
                       ),
@@ -210,12 +214,14 @@ class RestoringYouWallet_9 extends StatelessWidget {
                           padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
                           child: Container(
                             height: 60,
-
-                            child: Icon(Icons.circle,color: Colors.blue,),
+                            child: Icon(
+                              Icons.circle,
+                              color: Colors.blue,
+                            ),
                             decoration: BoxDecoration(
                                 color: Colors.white,
                                 borderRadius:
-                                BorderRadius.all(Radius.circular(10))),
+                                    BorderRadius.all(Radius.circular(10))),
                           ),
                         ),
                       ),
@@ -225,12 +231,14 @@ class RestoringYouWallet_9 extends StatelessWidget {
                           padding: const EdgeInsets.fromLTRB(10, 0, 30, 0),
                           child: Container(
                             height: 60,
-
-                            child: Icon(Icons.circle,color: Colors.blue,),
+                            child: Icon(
+                              Icons.circle,
+                              color: Colors.blue,
+                            ),
                             decoration: BoxDecoration(
                                 color: Colors.white,
                                 borderRadius:
-                                BorderRadius.all(Radius.circular(10))),
+                                    BorderRadius.all(Radius.circular(10))),
                           ),
                         ),
                       ),
@@ -242,9 +250,11 @@ class RestoringYouWallet_9 extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text(
-                        "Change PIN ",
-                        style: TextStyle(fontSize: 14, color: Colors.blue),
+                      GestureDetector(onTap: (){navigateTo(context, RestoringYouWallet_10());},
+                        child: Text(
+                          "Change PIN ",
+                          style: TextStyle(fontSize: 14, color: Colors.blue),
+                        ),
                       )
                     ],
                   ),
@@ -278,7 +288,56 @@ class RestoringYouWallet_9 extends StatelessWidget {
                     height: 30,
                     width: 150,
                     child: Center(
-                      child: GestureDetector(onTap: (){navigateTo(context, RestoringYouWallet_10());},
+                      child: GestureDetector(
+                        onTap: () {
+                          showDialog(
+                              context: context,
+                              builder: (context) {
+                                return Dialog(
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(40)),
+                                  elevation: 16,
+                                  child: Container(
+                                    child: ListView(
+                                      shrinkWrap: true,
+                                      children: <Widget>[
+                                        SizedBox(height: 20),
+                                        Center(child: Text('Notification'),
+                                        ),
+                                        Center(child: Text("Allow Notifications for your wallet")),
+                                        SizedBox(height: 100),
+                                        Row(
+                                          children: [
+                                            Expanded(
+                                              child: Container(
+                                                width: 50,
+                                                height: 50,
+                                                color: Colors.black45,
+                                                child: Center(child: Text("Don't",
+                                                style: TextStyle(fontSize: 17,
+                                                color: Colors.blue),)),
+                                              ),
+                                            ),
+                                            Expanded(
+                                              child: Container(
+                                                width: 50,
+                                                height: 50,
+                                                color: Colors.black45,
+                                                child: Center(child: Text("Allow",
+                                                  style: TextStyle(fontSize: 17,
+                                                  color: Colors.blue),)),
+                                              ),
+                                            ),
+                                          ],
+                                        )
+                                      ],
+                                    ),
+                                  ),
+                                );
+                              });
+
+                               navigateTo(context, RestoringYouWallet_10());
+                        },
                         child: Text(
                           "Confirm",
                           style: TextStyle(

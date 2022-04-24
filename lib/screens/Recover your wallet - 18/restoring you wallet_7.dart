@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:loginsignup/extra.dart';
 import 'package:loginsignup/screens/Recover%20your%20wallet%20-%2018/restoring%20_you%20_wallet_2.dart';
+import 'package:loginsignup/screens/Recover%20your%20wallet%20-%2018/restoring%20you%20wallet_8.dart';
 
 class RestoringYouWallet_7 extends StatelessWidget {
   @override
@@ -51,12 +52,14 @@ class RestoringYouWallet_7 extends StatelessWidget {
             children: [
               Padding(
                 padding: const EdgeInsets.all(10.0),
-                child: Text(
-                  "Confirm Your PIN To Secure Your Details",
-                  style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 15,
-                      color: Colors.blue),
+                child: GestureDetector(onTap: (){navigateTo(context, RestoringYouWallet_8());},
+                  child: Text(
+                    "Confirm Your PIN To Secure Your Details",
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 15,
+                        color: Colors.blue),
+                  ),
                 ),
               )
             ],

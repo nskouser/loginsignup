@@ -137,7 +137,7 @@ class QrCodeSharWithPage_5 extends StatelessWidget {
             height: 40,
           ),
           Container(
-            height: 350,
+           // height: 350,
             child: Column(
               children: [
                 SizedBox(
@@ -145,8 +145,61 @@ class QrCodeSharWithPage_5 extends StatelessWidget {
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: [Image.asset("assets/images/25.png")],
+                  children: [
+                    Container(
+                      width: 60,
+                      height: 60,
+                      child: Container(
+                        //height: ,
+                        //width: 95,
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: AssetImage(
+                              "assets/images/123.png",
+                            ),
+                          ),
+                        ),
+                      ),
+                      decoration: BoxDecoration(
+                        color: Colors.indigoAccent.withOpacity(0.1),
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(60),
+                        ),
+                      ),
+                    ),
+                    Image.asset("assets/images/25.png"),
+                    Container(
+                      width: 60,
+                      height: 60,
+                      child: Container(
+                        //   height: 100,
+
+                        //  width: 100,
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image: AssetImage(
+                              "assets/images/124.png",
+                            ),
+                          ),
+                        ),
+                      ),
+                      decoration: BoxDecoration(
+                        color: Colors.indigoAccent.withOpacity(0.1),
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(60),
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
+
+
+
+
+                //Row(
+                  //mainAxisAlignment: MainAxisAlignment.center,
+                  //children: [Image.asset("assets/images/25.png")],
+                //),
                 SizedBox(
                   height: 40,
                 ),
@@ -174,6 +227,11 @@ class QrCodeSharWithPage_5 extends StatelessWidget {
                 SizedBox(
                   height: 40,
                 ),
+
+
+
+
+
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [

@@ -4,6 +4,7 @@ import 'package:loginsignup/extra.dart';
 import 'package:loginsignup/screens/Recover%20your%20wallet%20-%2018/restoring%20_you%20_wallet_2.dart';
 import 'package:loginsignup/screens/Recover%20your%20wallet%20-%2018/restoring%20you%20wallet_7.dart';
 import 'package:loginsignup/screens/Recover%20your%20wallet%20-%2018/restoring%20you%20wallet_9.dart';
+import 'package:loginsignup/screens/backupyourwallet_7/restoringYou_6.dart';
 
 class RestoringYou_5 extends StatelessWidget {
   @override
@@ -66,8 +67,8 @@ class RestoringYou_5 extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.fromLTRB(20, 40, 20, 0),
             child: Container(
-              height: 600,
-              width: 100,
+             // height: 600,
+              //width: 100,
               child: Column(
                 children: [
                   Container(
@@ -160,7 +161,7 @@ class RestoringYou_5 extends StatelessWidget {
                     ],
                   ),
                   SizedBox(height: 30,),
-                  Row(
+                  Row(mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text("Your Face ID",style: TextStyle(
                         fontSize: 14,
@@ -175,7 +176,7 @@ class RestoringYou_5 extends StatelessWidget {
                     height: 30,
                     width: 150,
                     child: Center(
-                      child: GestureDetector(onTap: (){navigateTo(context, RestoringYou_5());},
+                      child: GestureDetector(onTap: (){navigateTo(context, RestoringYou_6());},
                         child: Text(
                           "Next",
                           style: TextStyle(

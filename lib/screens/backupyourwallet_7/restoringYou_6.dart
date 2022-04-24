@@ -1,9 +1,9 @@
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:loginsignup/extra.dart';
 import 'package:loginsignup/screens/Recover%20your%20wallet%20-%2018/restoring%20_you%20_wallet_2.dart';
-import 'package:loginsignup/screens/Recover%20your%20wallet%20-%2018/restoring%20you%20wallet_7.dart';
-import 'package:loginsignup/screens/Recover%20your%20wallet%20-%2018/restoring%20you%20wallet_9.dart';
+import 'package:loginsignup/screens/Recover%20your%20wallet%20-%2018/restoring%20you%20wallet_10.dart';
 import 'package:loginsignup/screens/id_Verification_demo_10/splash%20_onePage_1.dart';
 
 class RestoringYou_6 extends StatelessWidget {
@@ -55,7 +55,7 @@ class RestoringYou_6 extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: Text(
-                  "Enable  Your Face ID",
+                  "Confirm Your PIN To Secure Your Details",
                   style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 15,
@@ -147,27 +147,141 @@ class RestoringYou_6 extends StatelessWidget {
                   SizedBox(
                     height: 20,
                   ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        "PIN",
+                        style: TextStyle(
+                            fontSize: 24,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.black),
+                      )
+                    ],
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        "Re-enter your PIN code to confirm",
+                        style: TextStyle(fontSize: 14, color: Colors.black12),
+                      )
+                    ],
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    children: [
+                      Expanded(
+                        flex: 1,
+                        child: Padding(
+                          padding: const EdgeInsets.fromLTRB(30, 0, 10, 0),
+                          child: Container(
+                            height: 60,
+                            child: Icon(
+                              Icons.circle,
+                              color: Colors.blue,
+                            ),
+                            decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius:
+                                BorderRadius.all(Radius.circular(10))),
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        flex: 1,
+                        child: Padding(
+                          padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
+                          child: Container(
+                            height: 60,
+                            child: Icon(
+                              Icons.circle,
+                              color: Colors.blue,
+                            ),
+                            decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius:
+                                BorderRadius.all(Radius.circular(10))),
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        flex: 1,
+                        child: Padding(
+                          padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
+                          child: Container(
+                            height: 60,
+                            child: Icon(
+                              Icons.circle,
+                              color: Colors.blue,
+                            ),
+                            decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius:
+                                BorderRadius.all(Radius.circular(10))),
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        flex: 1,
+                        child: Padding(
+                          padding: const EdgeInsets.fromLTRB(10, 0, 30, 0),
+                          child: Container(
+                            height: 60,
+                            child: Icon(
+                              Icons.circle,
+                              color: Colors.blue,
+                            ),
+                            decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius:
+                                BorderRadius.all(Radius.circular(10))),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(
+                    height: 30,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      GestureDetector(onTap: (){navigateTo(context, SplashOnePage_1());},
+                        child: Text(
+                          "Change PIN ",
+                          style: TextStyle(fontSize: 14, color: Colors.blue),
+                        ),
+                      )
+                    ],
+                  ),
                   SizedBox(
                     height: 20,
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Image.asset(
-                        "assets/images/9.png",
-                        height: 270,
-                        width: 270,
+                      Text(
+                        "RadioButton / Inset / Normal ",
+                        style: TextStyle(fontSize: 14, color: Colors.blue),
                       )
                     ],
                   ),
-                  SizedBox(height: 30,),
-                  Row(
-                    children: [
-                      Text("Your Face ID",style: TextStyle(
-                          fontSize: 14,
-                          color: Colors.black26
-                      ),)
-                    ],
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Container(
+                    height: 40,
+                    width: 40,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.zero,
+                    ),
                   ),
                   SizedBox(
                     height: 100,
@@ -176,9 +290,58 @@ class RestoringYou_6 extends StatelessWidget {
                     height: 30,
                     width: 150,
                     child: Center(
-                      child: GestureDetector(onTap: (){navigateTo(context, SplashOnePage_1());},
+                      child: GestureDetector(
+                        onTap: () {
+                          showDialog(
+                              context: context,
+                              builder: (context) {
+                                return Dialog(
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(40)),
+                                  elevation: 16,
+                                  child: Container(
+                                    child: ListView(
+                                      shrinkWrap: true,
+                                      children: <Widget>[
+                                        SizedBox(height: 20),
+                                        Center(child: Text('Notification'),
+                                        ),
+                                        Center(child: Text("Allow Notifications for your wallet")),
+                                        SizedBox(height: 100),
+                                        Row(
+                                          children: [
+                                            Expanded(
+                                              child: Container(
+                                                width: 50,
+                                                height: 50,
+                                                color: Colors.black45,
+                                                child: Center(child: Text("Don't",
+                                                  style: TextStyle(fontSize: 17,
+                                                      color: Colors.blue),)),
+                                              ),
+                                            ),
+                                            Expanded(
+                                              child: Container(
+                                                width: 50,
+                                                height: 50,
+                                                color: Colors.black45,
+                                                child: Center(child: Text("Allow",
+                                                  style: TextStyle(fontSize: 17,
+                                                      color: Colors.blue),)),
+                                              ),
+                                            ),
+                                          ],
+                                        )
+                                      ],
+                                    ),
+                                  ),
+                                );
+                              });
+
+                          navigateTo(context, SplashOnePage_1());
+                        },
                         child: Text(
-                          "Next",
+                          "Confirm",
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 18,
@@ -190,21 +353,6 @@ class RestoringYou_6 extends StatelessWidget {
                     decoration: BoxDecoration(
                         color: Colors.blue,
                         borderRadius: BorderRadius.all(Radius.circular(20))),
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.all(10.0),
-                        child: Text(
-                          "I’ll do this later",
-                          style: TextStyle(
-                            //  fontWeight: FontWeight.bold,
-                              fontSize: 14,
-                              color: Colors.blue),
-                        ),
-                      )
-                    ],
                   ),
                 ],
               ),

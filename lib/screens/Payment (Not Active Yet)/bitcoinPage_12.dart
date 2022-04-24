@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:loginsignup/extra.dart';
+import 'package:loginsignup/screens/Vaccination%20Card%20Demo%20-%20not%20included/home375Page_1.dart';
 
 class BitcoinPage_12 extends StatelessWidget {
   @override
@@ -53,7 +55,8 @@ class BitcoinPage_12 extends StatelessWidget {
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
-        child: Center(child: Icon(Icons.add)),
+        child: Center(child: GestureDetector(onTap: (){navigateTo(context, Home375Page_1());},
+            child: Icon(Icons.add))),
         backgroundColor: Colors.blue,
       ),
       bottomSheet: Row(

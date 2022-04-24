@@ -144,14 +144,12 @@ class LinkSuccesFulPage_4 extends StatelessWidget{
                   children: [
                     Padding(
                       padding: const EdgeInsets.fromLTRB(30,10,0,0),
-                      child: GestureDetector(onTap: (){navigateTo(context, LinkSuccesFulPage_4());},
-                        child: Text("Card Added Successfully!",
-                          style: TextStyle(
-                            //fontWeight: FontWeight.bold,
-                            fontSize: 21.57,
-                            color: Colors.blue,
-                          ),),
-                      ),
+                      child: Text("Card Added Successfully!",
+                        style: TextStyle(
+                          //fontWeight: FontWeight.bold,
+                          fontSize: 21.57,
+                          color: Colors.blue,
+                        ),),
                     ),
 
                   ],

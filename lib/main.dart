@@ -8,6 +8,8 @@ import 'package:loginsignup/screens/Create%20QR%20code%20and%20share%20-%207/cre
 import 'package:loginsignup/screens/Create%20QR%20code%20and%20share%20-%207/qrCodeShredWithPage_5.dart';
 import 'package:loginsignup/screens/Create%20QR%20code%20and%20share%20-%207/sharedSuccesfulyPage_4.dart';
 import 'package:loginsignup/screens/Create%20QR%20code%20and%20share%20-%207/sharingPage_3.dart';
+import 'package:loginsignup/screens/Dark%20mode/freshStart12Page_3.dart';
+import 'package:loginsignup/screens/Dark%20mode/fresh_Start10Page_1.dart';
 import 'package:loginsignup/screens/Payment%20(Not%20Active%20Yet)/IphoneXPage_8.dart';
 import 'package:loginsignup/screens/Payment%20(Not%20Active%20Yet)/IphoneX_Page_6.dart';
 import 'package:loginsignup/screens/Payment%20(Not%20Active%20Yet)/allPaymenntCardPage_2.dart';
@@ -29,9 +31,11 @@ import 'package:loginsignup/screens/Recover%20your%20wallet%20-%2018/restoring%2
 import 'package:loginsignup/screens/Recover%20your%20wallet%20-%2018/restoring%20you%20wallet_6.dart';
 import 'package:loginsignup/screens/Recover%20your%20wallet%20-%2018/restoring%20you%20wallet_7.dart';
 import 'package:loginsignup/screens/Recover%20your%20wallet%20-%2018/restoring%20you%20wallet_8.dart';
+import 'package:loginsignup/screens/Recover%20your%20wallet%20-%2018/restoring%20you%20wallet_9.dart';
 import 'package:loginsignup/screens/Recover%20your%20wallet%20-%2018/restoring_%20you_%20wallet_3.dart';
 import 'package:loginsignup/screens/Recover%20your%20wallet%20-%2018/wallet%20recovery%20is%20a%20Success%20_5.dart';
 import 'package:loginsignup/screens/Rental_history%20for_USD%20-%2015/applyyForRentalHistory_Page_6.dart';
+import 'package:loginsignup/screens/Rental_history%20for_USD%20-%2015/connectedWithSD_Page_7.dart';
 import 'package:loginsignup/screens/Rental_history%20for_USD%20-%2015/connectionsPage_5.dart';
 import 'package:loginsignup/screens/Rental_history%20for_USD%20-%2015/formForRentalRequest_Page_8.dart';
 import 'package:loginsignup/screens/Rental_history%20for_USD%20-%2015/frame940Page_2.dart';
@@ -40,9 +44,22 @@ import 'package:loginsignup/screens/Rental_history%20for_USD%20-%2015/notificati
 import 'package:loginsignup/screens/Rental_history%20for_USD%20-%2015/rentlCredntialSucsfulyacpt_11.dart';
 import 'package:loginsignup/screens/Rental_history%20for_USD%20-%2015/rentlRqSucsfulSbmtd_13.dart';
 import 'package:loginsignup/screens/Rental_history%20for_USD%20-%2015/searchfor_livingaptsPage_3.dart';
+import 'package:loginsignup/screens/Vaccination%20Card%20Demo%20-%20not%20included/1Page_6.dart';
+import 'package:loginsignup/screens/Vaccination%20Card%20Demo%20-%20not%20included/confirmationPage_8.dart';
+import 'package:loginsignup/screens/Vaccination%20Card%20Demo%20-%20not%20included/connectionsPage_10.dart';
+import 'package:loginsignup/screens/Vaccination%20Card%20Demo%20-%20not%20included/connectionsPage_18.dart';
+import 'package:loginsignup/screens/Vaccination%20Card%20Demo%20-%20not%20included/edu_QR_4_Page_22.dart';
+import 'package:loginsignup/screens/Vaccination%20Card%20Demo%20-%20not%20included/frame895Page_4.dart';
+import 'package:loginsignup/screens/Vaccination%20Card%20Demo%20-%20not%20included/frame_894Page_3.dart';
 import 'package:loginsignup/screens/Vaccination%20Card%20Demo%20-%20not%20included/home375Page_1.dart';
+import 'package:loginsignup/screens/Vaccination%20Card%20Demo%20-%20not%20included/rentlRequstSucesfulysubmitd_12.dart';
+import 'package:loginsignup/screens/Vaccination%20Card%20Demo%20-%20not%20included/share%20_or_%20deletePag_14.dart';
+import 'package:loginsignup/screens/Vaccination%20Card%20Demo%20-%20not%20included/sharingY_N_17.dart';
+import 'package:loginsignup/screens/Vaccination%20Card%20Demo%20-%20not%20included/submittingCredentialsToUSDPage_11.dart';
+import 'package:loginsignup/screens/Vaccination%20Card%20Demo%20-%20not%20included/submittingCredentialsToUSDPage_9.dart';
 import 'package:loginsignup/screens/backupyourwallet_7/frame948Page_1.dart';
 import 'package:loginsignup/screens/backupyourwallet_7/frame949Page_2.dart';
+import 'package:loginsignup/screens/backupyourwallet_7/restoringYou_5.dart';
 import 'package:loginsignup/screens/create_account/typein_login.dart';
 import 'package:loginsignup/screens/homePages/cardDetailPage_6.dart';
 import 'package:loginsignup/screens/homePages/connectionPage_3.dart';
@@ -95,7 +112,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home:Home375Page_1(),
+      home:LagePage_4(),
     );
   }
 }

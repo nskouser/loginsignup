@@ -54,6 +54,7 @@ class AllPayment_CardsPage_1 extends StatelessWidget{
         ),
 
       ),
+
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: FloatingActionButton(
         onPressed: () {},

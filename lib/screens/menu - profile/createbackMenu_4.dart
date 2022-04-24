@@ -74,7 +74,7 @@ class CreateMenu_4 extends StatelessWidget {
                         Icons.check_box,
                         color: Colors.white,
                       ),
-                      GestureDetector(onTap: (){navigateTo(context, SplashOnePage_1());},
+                      GestureDetector(onTap: (){navigateTo(context, FramePage_1());},
                         child: Text(
                           "Security",
                           style: TextStyle(

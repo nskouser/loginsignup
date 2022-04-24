@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:loginsignup/extra.dart';
+import 'package:loginsignup/screens/Payment%20(Not%20Active%20Yet)/iphoneXPage_9.dart';
 
 class IphoneX_Page_8 extends StatelessWidget {
   @override
@@ -30,12 +32,14 @@ class IphoneX_Page_8 extends StatelessWidget {
             )
           ],
         ),
-        title: Text(
-          "Visa",
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 20,
-            color: Colors.blueGrey,
+        title: GestureDetector(onTap: (){navigateTo(context, IPhoneX_Page_9());},
+          child: Text(
+            "Visa",
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 20,
+              color: Colors.blueGrey,
+            ),
           ),
         ),
         centerTitle: true,
